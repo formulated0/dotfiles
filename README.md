@@ -10,8 +10,9 @@ dotfiles - nobody asked for it but every arch user needs to obnoxiously advertis
 
 ---
 
-**hyprland config** - when i first started i stole this from someone but ive modified it a lot since then and just never bothered to get rid of the comments on it #this will be a url later
-
+[**hyprland config**](https://github.com/formulated0/dotfiles/tree/main/hypr) - when i first started i stole this from someone but ive modified it a lot since then and just never bothered to get rid of the comments on it  
+[**kitty config**](kittyGithubPageUrlGoesHere)  
+[**fish config**](fishGithubPageUrlGoesHere)  
 
 
 ### sysinfo
