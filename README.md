@@ -33,6 +33,7 @@
 | statusbar | waybar |
 | term | kitty |
 | shell | fish |
+| prompt | starship |
 | editor | vsc (with vim extension) |
 | editor2 | neovim (lazyvim) |
 | fm | dolphin/yazi |
