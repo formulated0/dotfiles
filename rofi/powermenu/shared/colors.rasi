@@ -1,0 +1,10 @@
+/*--colors.rasi--*/
+
+* {
+    background:                  #282c34;
+    background-alt:              #353b45;
+    foreground:                  #abb2bf;
+    selected:                    #56b6c2;
+    active:                      #98c379;
+    urgent:                      #e06c75;
+}

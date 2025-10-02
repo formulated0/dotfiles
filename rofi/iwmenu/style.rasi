@@ -1,0 +1,165 @@
+@theme "~/.config/rofi/themes.rasi"
+
+/*****----- Configuration -----*****/
+configuration {
+    modi:                       "drun";
+    show-icons:                 false;
+    display-drun:               "";
+    drun-display-format:        "{name}";
+    window-format:              "";
+}
+
+/*****----- Global Properties -----*****/
+* {
+    font:                        "JetBrains Mono Nerd Font 10";
+    background-color:            #272727;
+    text-color:                  #8c7c6c;
+}
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       500px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+    enabled:                     true;
+    border:                      2px;
+    border-color:                #8c7c6c;
+    border-radius:               0px;
+    cursor:                      "default";
+    background-color:            #272727;
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    spacing:                     0px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "inputbar", "listbox" ];
+}
+listbox {
+    spacing:                     10px;
+    padding:                     10px;
+    background-color:            transparent;
+    orientation:                 vertical;
+    children:                    [ "listview" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    padding:                     10px;
+    background-color:            #323232;
+    text-color:                  #8c7c6c;
+    orientation:                 horizontal;
+    border:                      0 0 2px 0;
+    border-color:                #272727;
+    children:                    [ "textbox-prompt-colon", "entry"];
+}
+textbox-prompt-colon {
+    enabled:                     true;
+    expand:                      false;
+    str:                         "wifi: ";
+    padding:                     8px 12px;
+    border-radius:               0px;
+    background-color:            #323232;
+    text-color:                  #8c7c6c;
+}
+entry {
+    enabled:                     true;
+    expand:                      true;
+    padding:                     8px 12px;
+    border-radius:               0px;
+    background-color:            #323232;
+    text-color:                  #8c7c6c;
+    cursor:                      text;
+    placeholder:                 "Search networks...";
+    placeholder-color:           #8c7c6c;
+}
+
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    spacing:                     5px;
+    background-color:            #272727;
+    text-color:                  #8c7c6c;
+    cursor:                      "default";
+    border-radius:               0px;
+}
+
+/*****----- Elements -----*****/
+element {
+    background-color:            transparent;
+    text-color:                  #8c7c6c;
+    spacing:                     10px;
+    padding:                     6px;
+    border-radius:               0px;
+    cursor:                      pointer;
+    /* --- MODIFICATION: Added faint border around all elements --- */
+    border:                      1px solid;
+    border-color:                #323232;
+}
+element normal.normal {
+    background-color:            transparent;
+    text-color:                  #8c7c6c;
+}
+element selected.normal,
+element selected.active,
+element selected,
+element.selected {
+    background-color:            #323232;
+    text-color:                  #88871d;
+    /* --- OPTIONAL: Uncomment the line below for a more visible selected border --- */
+    /* border-color:             #8c7c6c; */
+}
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        0px;
+    cursor:                      inherit;
+}
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+    padding:                     0px 0px 0px 5px;
+}
+
+/*****----- Message -----*****/
+message {
+    background-color:            transparent;
+    border:                      2px;
+    border-color:                @border;
+    padding:                     20px;
+    border-radius:               8px;
+}
+textbox {
+    padding:                     10px;
+    border-radius:               8px;
+    background-color:            @background-alt;
+    text-color:                  #867d66;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+}
+error-message {
+    padding:                     10px;
+    border-radius:               8px;
+    background-color:            @urgent;
+    text-color:                  @background;
+}

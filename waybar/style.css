@@ -1,0 +1,163 @@
+/* Desaturated "Pastel" Monochrome Palette
+BG: #222222 (Dark Gray)
+BG_ALT: #3c3836 (Warmer Dark Gray)
+FG: #a89984 (Muted Beige)
+FG_ACTIVE: #d5c4a1 (Soft Light Beige)
+URGENT: #fb4934 (Soft Red)
+*/
+
+/* Universal styles */
+* {
+  padding: 0;
+  min-height: 0;
+  margin: 0;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0px;
+}
+
+/* Main bar styling */
+window#waybar {
+  background: #222222; /* #222222 */
+  padding: 0px 0px;
+  font-family: "JetbrainsMono Nerd Font";
+  font-size: 14px;
+  color: #222222;
+}
+
+/* Module container styling */
+.modules-left,
+.modules-center,
+.modules-right {
+  margin: 3px 1px;
+  padding: 0 0px;
+}
+
+/* Default module style */
+#window,
+#custom-updates,
+#tray,
+#network,
+#wireplumber,
+#battery,
+#backlight,
+#clock,
+#memory,
+#cpu,
+#custom-launcher,
+#custom-bluetooth,
+#custom-bluetooth_mic_toggle,
+#mpris,
+#custom-mpris,
+#workspaces,
+#custom-power,
+#custom-weather,
+#taskbar {
+  margin: 0 3px;
+  padding: 2px 8px;
+  background-color: #222222;
+  color: #a89984; /* FG */
+  border: 2px solid #a89984; /* FG */
+}
+
+/* Remove generic hover effect */
+#window:hover,
+#custom-updates:hover,
+#tray:hover,
+#network:hover,
+#wireplumber:hover,
+#battery:hover,
+#backlight:hover,
+#clock:hover,
+#memory:hover,
+#cpu:hover,
+#custom-launcher:hover,
+#custom-bluetooth:hover,
+#custom-bluetooth_mic_toggle:hover,
+#mpris:hover,
+#custom-mpris:hover,
+#workspaces:hover,
+#custom-power:hover,
+#custom-weather:hover,
+#taskbar:hover {
+  background: #222222;
+}
+
+/* === Center Modules: Workspaces === */
+#workspaces {
+  padding: 0;
+}
+
+#workspaces button {
+  color: #a89984; /* FG */
+  /* border: 2px solid #a89984; */
+  min-width: 20px;
+  padding: 0 4px;
+  /* margin: 0 3px;  */
+  background-color: #222222;
+}
+
+#workspaces button:hover {
+  color: #d5c4a1; /* FG_ACTIVE */
+  background: #3c3836; /* BG_ALT */
+  /* border: 2px solid #d5c4a1; */
+}
+
+#workspaces button.active,
+#workspaces button.active:hover {
+  color: #222222; /* BG */
+  /* border: 2px solid #d5c4a1; */
+  background: #d5c4a1; /* FG_ACTIVE */
+}
+
+#workspaces button.urgent {
+  color: #d5c4a1; /* FG_ACTIVE */
+  border: 2px solid #fb4934;
+  background: #fb4934; /* URGENT */
+}
+
+/* === Applying Borders & States to All Modules === */
+
+/* States */
+#wireplumber.muted,
+#network.disconnected,
+#battery.critical:not(.charging) {
+  color: #fb4934; /* URGENT */
+  border: 2px solid #fb4934; /* URGENT */
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #d5c4a1; /* FG_ACTIVE */
+  border: 2px solid #d5c4a1; /* FG_ACTIVE */
+}
+
+#window {
+  color: #d5c4a1; /* FG_ACTIVE */
+  border: 2px solid #d5c4a1; /* FG_ACTIVE */
+}
+
+/* Taskbar styling */
+#taskbar button {
+  border: 2px solid #a89984; /* FG */
+  background: #222222;
+  margin: 0 3px;
+  padding: 0 6px;
+  color: #a89984; /* FG */
+}
+#taskbar button.active {
+  background: #3c3836; /* BG_ALT */
+  border-color: #d5c4a1; /* FG_ACTIVE */
+  color: #d5c4a1;
+}
+#taskbar button:hover {
+  background: #3c3836; /* BG_ALT */
+}
+#taskbar button.urgent {
+  background: #fb4934; /* URGENT */
+  border-color: #fb4934; /* URGENT */
+  color: #d5c4a1; /* FG_ACTIVE */
+}
+

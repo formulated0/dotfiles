@@ -1,0 +1,237 @@
+/* Gruvbox-inspired Palette (from original theme 2)
+BG0: #282828
+BG1: #3c3836
+FG: #ebdbb2
+RED: #fb4934
+GREEN: #b8bb26
+YELLOW: #fabd2f
+BLUE: #83a598
+PURPLE: #d3869b
+AQUA: #8ec07c
+ORANGE: #fe8019
+GRAY: #928374 */
+
+/* Universal styles inspired by Theme 1, but with height adjustments */
+* {
+	padding: 0;
+	min-height: 0;
+	margin: 0;
+	text-shadow: none;
+	transition: none;
+	box-shadow: none;
+	border: none;
+	border-radius: 0px;
+}
+
+/* Main bar styling adjusted for height */
+window#waybar {
+	background: rgba(34, 34, 34, 0.85);
+	padding: 0px 5px;
+	/* Font from Theme 2, size restored for original height */
+	font-family: "JetbrainsMono Nerd Font";
+	font-size: 14px;
+	color: rgb(32, 32, 32);
+}
+
+/* Module container styling from Theme 1 */
+.modules-left,
+.modules-center,
+.modules-right {
+	margin: 5px 0px;
+	padding: 0 6px;
+}
+
+/* Default module style, with padding to control bar height */
+#window,
+#custom-updates,
+#tray,
+#network,
+#wireplumber,
+#battery,
+#backlight,
+#clock,
+#memory,
+#cpu,
+#custom-launcher,
+#custom-bluetooth,
+#custom-bluetooth_mic_toggle,
+#mpris,
+#custom-mpris,
+#workspaces,
+#custom-power,
+#custom-weather,
+#taskbar {
+    margin: 0 3px;
+    padding: 2px 8px; /* Vertical padding helps control height */
+	background-color: rgba(34, 34, 34, 1);
+}
+
+/* Remove generic hover effect */
+#window:hover,
+#custom-updates:hover,
+#tray:hover,
+#network:hover,
+#wireplumber:hover,
+#battery:hover,
+#backlight:hover,
+#clock:hover,
+#memory:hover,
+#cpu:hover,
+#custom-launcher:hover,
+#custom-bluetooth:hover,
+#custom-bluetooth_mic_toggle:hover,
+#mpris:hover,
+#custom-mpris:hover,
+#workspaces:hover,
+#custom-power:hover,
+#custom-weather:hover,
+#taskbar:hover {
+  background: rgba(34, 34, 34, 1);
+}
+
+/* === Center Modules: Workspaces, styled like Theme 1 === */
+#workspaces {
+    padding: 0;
+}
+
+#workspaces button {
+	color: #928374; /* GRAY */
+	border: 2px solid #928374;
+	min-width: 20px;
+	padding: 0 4px;
+	margin: 0 3px;
+	background-color: rgba(34, 34, 34, 1);
+}
+
+#workspaces button:hover {
+	color: #282828;      /* BG0 */
+	background: #d3869b; /* PURPLE */
+	border: 2px solid #d3869b;
+}
+
+#workspaces button.active,
+#workspaces button.active:hover {
+	color: #282828;      /* BG0 */
+	border: 2px solid #b8bb26; /* GREEN */
+	background: #b8bb26; /* GREEN */
+}
+
+#workspaces button.urgent {
+	color: #282828;      /* BG0 */
+	border: 2px solid #fb4934; /* RED */
+	background: #fb4934; /* RED */
+}
+
+
+/* === Applying Borders to All Modules === */
+
+/* Left Modules */
+#custom-launcher {
+  color: #83a598; /* BLUE */
+  border: 2px solid #83a598;
+}
+#wireplumber {
+  color: #8ec07c; /* AQUA */
+  border: 2px solid #8ec07c;
+}
+#wireplumber.muted {
+  color: #fb4934; /* RED */
+  border: 2px solid #fb4934;
+}
+#custom-mpris,
+#mpris {
+  color: #d3869b; /* PURPLE */
+  border: 2px solid #d3869b;
+}
+
+/* Center Modules */
+#clock {
+  color: #fabd2f; /* YELLOW */
+  border: 2px solid #fabd2f;
+}
+#custom-weather {
+  color: #fe8019; /* ORANGE */
+  border: 2px solid #fe8019;
+}
+
+/* Right Modules */
+#tray {
+  color: #d3869b; /* PURPLE */
+  border: 2px solid #d3869b;
+}
+
+/* NEW: Style for the custom bluetooth mic toggle */
+#custom-bluetooth_mic_toggle {
+  color: #fe8019; /* PURPLE, to match other system icons */
+  border: 2px solid #fe8019;
+}
+
+#custom-bluetooth {
+  color: #83a598; /* BLUE */
+  border: 2px solid #83a598;
+}
+#network {
+  color: #b8bb26; /* GREEN */
+  border: 2px solid #b8bb26;
+}
+#network.disconnected {
+  color: #fb4934; /* RED */
+  border: 2px solid #fb4934;
+}
+#custom-power {
+  color: #fb4934; /* RED */
+  border: 2px solid #fb4934;
+}
+
+/* Other System Modules */
+#cpu {
+  color: #b8bb26; /* GREEN */
+  border: 2px solid #b8bb26;
+}
+#memory {
+  color: #8ec07c; /* AQUA */
+  border: 2px solid #8ec07c;
+}
+#battery {
+  color: #b8bb26; /* GREEN */
+  border: 2px solid #b8bb26;
+}
+#battery.charging,
+#battery.plugged {
+  color: #8ec07c; /* AQUA */
+  border: 2px solid #8ec07c;
+}
+#battery.critical:not(.charging) {
+  color: #fb4934; /* RED */
+  border: 2px solid #fb4934;
+}
+#backlight {
+  color: #fabd2f; /* YELLOW */
+  border: 2px solid #fabd2f;
+}
+#window {
+  color: #fabd2f; /* YELLOW */
+  border: 2px solid #fabd2f;
+  background: rgba(34, 34, 34, 1);
+}
+
+/* Taskbar styling to fit the new look */
+#taskbar button {
+  border: 2px solid #928374;
+  background: rgba(34, 34, 34, 1);
+  margin: 0 3px;
+  padding: 0 6px;
+  color: #ebdbb2;
+}
+#taskbar button.active {
+  background: #3c3836;
+  border-color: #ebdbb2;
+}
+#taskbar button:hover {
+  background: #3c3836;
+}
+#taskbar button.urgent {
+  background: #fb4934;
+  border-color: #fb4934;
+  color: #282828;
+}
