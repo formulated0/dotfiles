@@ -19,13 +19,13 @@
 
 ## index
 
-**Configs:** [hypr](https://github.com/formulated0/dotfiles/tree/main/hypr) | [waybar](https://github.com/formulated0/dotfiles/tree/main/waybar) | [kitty](https://github.com/formulated0/dotfiles/tree/main/kitty) | [fish](https://github.com/formulated0/dotfiles/tree/main/fish) | [nvim](https://github.com/formulated0/dotfiles/tree/main/nvim) | [yazi](https://github.com/formulated0/dotfiles/tree/main/yazi) | [rofi](https://github.com/formulated0/dotfiles/tree/main/rofi) | [mako](https://github.com/formulated0/dotfiles/tree/main/mako) | [btop](https://github.com/formulated0/dotfiles/tree/main/btop) | [fastfetch](https://github.com/formulated0/dotfiles/tree/main/fastfetch) | [Kvantum](https://github.com/formulated0/dotfiles/tree/main/Kvantum) | [qt5ct](https://github.com/formulated0/dotfiles/tree/main/qt5ct) | [qt6ct](https://github.com/formulated0/dotfiles/tree/main/qt6ct) | [starship](https://github.com/formulated0/dotfiles/tree/main/starship) | [misc scripts](https://github.com/formulated0/dotfiles/tree/main/.local/bin)
+**configs:** [hypr](https://github.com/formulated0/dotfiles/tree/main/hypr) | [waybar](https://github.com/formulated0/dotfiles/tree/main/waybar) | [kitty](https://github.com/formulated0/dotfiles/tree/main/kitty) | [fish](https://github.com/formulated0/dotfiles/tree/main/fish) | [nvim](https://github.com/formulated0/dotfiles/tree/main/nvim) | [yazi](https://github.com/formulated0/dotfiles/tree/main/yazi) | [rofi](https://github.com/formulated0/dotfiles/tree/main/rofi) | [mako](https://github.com/formulated0/dotfiles/tree/main/mako) | [btop](https://github.com/formulated0/dotfiles/tree/main/btop) | [fastfetch](https://github.com/formulated0/dotfiles/tree/main/fastfetch) | [Kvantum](https://github.com/formulated0/dotfiles/tree/main/Kvantum) | [qt5ct](https://github.com/formulated0/dotfiles/tree/main/qt5ct) | [qt6ct](https://github.com/formulated0/dotfiles/tree/main/qt6ct) | [starship](https://github.com/formulated0/dotfiles/tree/main/starship) | [misc scripts](https://github.com/formulated0/dotfiles/tree/main/.local/bin)
 
 ---
 
 ## sysinfo
 
-| Key | Value |
+| key | value |
 |-----|-------|
 | distro | arch linux (btw) |
 | kernel | 6.16.8-zen3-1-zen (as of 02/10/25) |
@@ -44,7 +44,7 @@
 
 ## hardware
 
-| Component | Spec |
+| component | spec |
 |-----------|------|
 | cpu | ryzen 7 3700x |
 | gpu | nvidia rtx3060ti |
